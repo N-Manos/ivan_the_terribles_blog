@@ -1,9 +1,7 @@
-# My New Blog!
+Ivan's terrible blog that I have performed optimizations on to make load faster.
 
-I've got a lot to say, and now I have a place to say it!!!!!
+Hosted at heroku: http://ivan-the-terrible-blog.herokuapp.com/posts
 
-Read all my amazing posts!!!!! You can load them into the app with: `rake load:blog`
-
-Since I know you want to read them all, I designed my page to show EVERYTHING on the front page of the site!!!!!
-
-I know it is a little slow (but totes worth it!!!!)... _Do you know how I can make it faster?_
+Test Results:
+http://loadimpact.com/load-test/ivan-the-terrible-blog.herokuapp.com-41e41a29e8448a44a11e87659aa3abeb
+![load impact](https://www.dropbox.com/s/j3wkfgyj59a48p2/loadimpactscreen.png?dl=0 )
