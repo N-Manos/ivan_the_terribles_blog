@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   require 'will_paginate/array'
-  caches_page :index
+
   # GET /posts
   # GET /posts.json
   def index
