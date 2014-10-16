@@ -4,4 +4,4 @@ Hosted at heroku: http://ivan-the-terrible-blog.herokuapp.com/posts
 
 Test Results:
 http://loadimpact.com/load-test/ivan-the-terrible-blog.herokuapp.com-41e41a29e8448a44a11e87659aa3abeb
-![load impact](https://dl-web.dropbox.com/get/Photos/loadimpactscreen.png?_subject_uid=144532964&w=AAAWJO0NUtRGFKHXtCnOzpDxqfYPjd9xvxzXzA1O4JGfGg )
+![load impact](https://raw.githubusercontent.com/N-Manos/Screenshots/master/loadimpactscreen.png)
