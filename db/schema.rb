@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130615172522) do
+ActiveRecord::Schema.define(:version => 20141016001750) do
 
   create_table "comments", :force => true do |t|
     t.text     "body"
@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(:version => 20130615172522) do
     t.datetime "updated_at", :null => false
   end
 
+  add_index "comments", ["body"], :name => "index_comments_on_body"
+  add_index "comments", ["post_id"], :name => "index_comments_on_post_id"
+
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "body"
@@ -27,11 +30,17 @@ ActiveRecord::Schema.define(:version => 20130615172522) do
     t.datetime "updated_at", :null => false
   end
 
+  add_index "posts", ["body"], :name => "index_posts_on_body"
+  add_index "posts", ["title"], :name => "index_posts_on_title"
+
   create_table "replies", :force => true do |t|
     t.text     "body"
     t.integer  "comment_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  add_index "replies", ["body"], :name => "index_replies_on_body"
+  add_index "replies", ["comment_id"], :name => "index_replies_on_comment_id"
 
 end

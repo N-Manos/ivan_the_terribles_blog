@@ -4,7 +4,7 @@ gem 'rails', '~> 3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'will_paginate', '~> 3.0.5'
 gem 'pg'
 
 # Gems used only for assets and not required
