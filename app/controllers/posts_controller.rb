@@ -4,8 +4,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
-#    @posts = Post.paginate(:page => params[:page], :per_page => 10).includes(:comments).all
+#    @posts = Post.all
+    @posts = Post.paginate(:page => params[:page], :per_page => 10).includes(:comments).all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
